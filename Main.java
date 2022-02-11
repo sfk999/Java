@@ -21,8 +21,7 @@ public class Main {
 //        System.out.println("Строка содержит" );
 //        System.out.println("price1 != price2:" + (productPrice != productPrice2));
 
-//        String string1 = "First string";
-//        String string2 = "second string";
+//
 ////        System.out.println("Строки равны " + string1.equals(string2));ing
 
 //        Scanner scanner = new Scanner(System.in);
@@ -43,13 +42,21 @@ public class Main {
 //            System.out.println("Не первая строка");
 //        }
 
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Введите ваше имя: ");
+//        String stringName = scanner.nextLine();
+//        if (stringName.equals("")) {
+//            System.out.println("Привет, неизвестный");
+//        } else {
+//            System.out.println("Привет, " + stringName + "!");
+//        }
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите ваше имя: ");
-        String stringName = scanner.nextLine();
-        if (stringName.equals("")) {
-            System.out.println("Привет, неизвестный");
-        } else {
-            System.out.println("Привет, " + stringName + "!");
-        }
+
+        String stringName;
+        do {
+            System.out.println("Введите ваше имя: ");
+            stringName = scanner.nextLine();
+        } while (stringName.length() == 0);
+        System.out.println("Привет, " + stringName + "!");
     }
 }
