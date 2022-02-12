@@ -50,13 +50,25 @@ public class Main {
 //        } else {
 //            System.out.println("Привет, " + stringName + "!");
 //        }
-        Scanner scanner = new Scanner(System.in);
 
-        String stringName;
-        do {
-            System.out.println("Введите ваше имя: ");
-            stringName = scanner.nextLine();
-        } while (stringName.length() == 0);
-        System.out.println("Привет, " + stringName + "!");
+
+//        Scanner scanner = new Scanner(System.in);
+//        String stringName;
+//        do {
+//            System.out.println("Введите ваше имя: ");
+//            stringName = scanner.nextLine();
+//        } while (stringName.length() == 0);
+//        System.out.println("Привет, " + stringName + "!");
+
+        Person person1 = new Person("Иван", "Петрович", "Сидоров",33);
+        person1.printName();
+        person1.printAge();
+        person1.getAge();
+
+//        Person person2 = new Person("Ирина", "Павловна", "Соколова","23");
+//        person2.printName();
+//        person2.printAge();
+
+
     }
 }
