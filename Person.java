@@ -11,10 +11,7 @@ public class Person {
         this.age = age;
     }
 
-    public int getAge() {
-        age = 2022 - age;
-        return age;
-    }
+    public int getAge() {return age;}
 
     public void setAge(int age) {
         this.age = age;
@@ -45,13 +42,21 @@ public class Person {
     }
 
     public void printName() {
+
         System.out.println("Имя: " + name);
     }
 
     public void printAge() {
         System.out.println("Возраст: " + age);
+    }
+
+    public void printBorn() {
         System.out.println("Год рождения: " + (2022-age));
     }
 
+    @Override
+    public String toString() {
+        return name + " " + middleName + " " + familyName + ", Возраст: " + age + ", Год рождения: " + (2022-age);
+    }
 }
 

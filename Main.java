@@ -63,7 +63,9 @@ public class Main {
         Person person1 = new Person("Иван", "Петрович", "Сидоров",33);
         person1.printName();
         person1.printAge();
-        person1.getAge();
+        person1.printBorn();
+
+        System.out.println("Человек1: " + person1);
 
 //        Person person2 = new Person("Ирина", "Павловна", "Соколова","23");
 //        person2.printName();
