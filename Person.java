@@ -53,7 +53,7 @@ public class Person {
     public void printBorn() {
         System.out.println("Год рождения: " + (2022-age));
     }
-
+1
     @Override
     public String toString() {
         return name + " " + middleName + " " + familyName + ", Возраст: " + age + ", Год рождения: " + (2022-age);
