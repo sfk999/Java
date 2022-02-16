@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Person {
     private String name;
     private String middleName;
@@ -50,13 +52,15 @@ public class Person {
         System.out.println("Возраст: " + age);
     }
 
-    public void printBorn() {
-        System.out.println("Год рождения: " + (2022-age));
+    public void getBornYear() {
+        System.out.println("Год рождения: " + (currentYear-age));
     }
 
     @Override
     public String toString() {
-        return name + " " + middleName + " " + familyName + ", Возраст: " + age + ", Год рождения: " + (2022-age);
+        return name + " " + middleName + " " + familyName + ", Возраст: " + age + ", Год рождения: " + (currentYear-age);
     }
+
+
 }
 
