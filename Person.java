@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 
 public class Person {
@@ -53,12 +54,14 @@ public class Person {
     }
 
     public void getBornYear() {
-        System.out.println("Год рождения: " + (currentYear-age));
+        Calendar cal = Calendar.getInstance();
+        int result = cal.getWeekYear() - age;
+        System.out.println("Год рождения: " + result);
     }
 
     @Override
     public String toString() {
-        return name + " " + middleName + " " + familyName + ", Возраст: " + age + ", Год рождения: " + (currentYear-age);
+        return name + " " + middleName + " " + familyName + ", Возраст: " + age ;
     }
 
 
