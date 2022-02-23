@@ -2,6 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Person person1 = new Person("Иван", "Петрович", "Сидоров",33);
+        System.out.println("Человек1. Год рождения: " + person1.getBornYear());
+
+//        person1.getBornYear();
+//        person1.printName();
+//        person1.printAge();
+//        Person person2 = new Person("Ирина", "Павловна", "Соколова","23");
+//        person2.printName();
+//        person2.printAge();
 
 //        int productPrice = 100;
 //        int productPrice2 = 200;
@@ -59,18 +68,5 @@ public class Main {
 //            stringName = scanner.nextLine();
 //        } while (stringName.length() == 0);
 //        System.out.println("Привет, " + stringName + "!");
-
-        Person person1 = new Person("Иван", "Петрович", "Сидоров",33);
-        person1.printName();
-        person1.printAge();
-        person1.getBornYear();
-
-        System.out.println("Человек1: " + person1);
-
-//        Person person2 = new Person("Ирина", "Павловна", "Соколова","23");
-//        person2.printName();
-//        person2.printAge();
-
-
     }
 }
